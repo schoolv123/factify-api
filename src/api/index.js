@@ -4,7 +4,7 @@ const router = express.Router();
 router.get("/", (req, res) => {
   // res.send("api home page");
   res.json({
-    success: 1,
+    success: true,
     message: "This rest api works"
   });
 });
