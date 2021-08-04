@@ -7,8 +7,8 @@ const createUser = (req, res) => {
       //console.log(err);
       return res.status(500).json({
         success: false,
-        err:err,
-        message: "Database connection error"
+        message: "Database connection error",
+       error: err
       });
     } else {
       return req.status(200).json({
